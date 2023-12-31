@@ -1,19 +1,11 @@
-# INTRODUCTION :
-This project focuses on analyzing music store data with SQL. The dataset has 11 tables: Employee, Customer, Invoice, InvoiceLine, Track, MediaType, Genre, Album, Artist, PlaylistTrack, and Playlist. This project intends to answer many questions and obtain important insights into the music store's operations by applying SQL queries to the dataset.	
 
-# Key Takeaways
--Use subqueries and temporary tables to take your queries to a whole new level
--Use SQL to make data informed decisions
+# Q.1 :- Who is the senior most employee based on job title?
 
 
-# Q.1 
-Who is the senior most employee based on job title?
-
-```sql
 select * from employee
 order by levels desc
 limit 1;
-```
+
 # Q.2:- Which country have the most invoices?
 
 select * from invoice;
