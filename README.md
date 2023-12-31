@@ -38,3 +38,19 @@ ORDER BY TOTAL DESC
 LIMIT 3;
 ```
 
+Q4. Which city has the best customers?
+
+ Markup : * We would like to throw a promotional Music Festival in the city we made the most money.
+ Markup : * Write a query that returns one city that has the highest sum of invoice totals.
+ Markup : * Return both the city name & sum of all invoice totals.
+
+```sql
+select sum(total) as total_invoice, billing_city from invoice
+group by billing_city
+order by total_invoice desc;
+```
+
+Q5. Who is the best customer?
+
+The customer who has spent the most money will be declared the best customer.
+Write a query that returns the person who has spent the most money.
