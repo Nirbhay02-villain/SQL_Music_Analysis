@@ -16,6 +16,8 @@ The dataset for this project has 11 tables: Employee, Customer, Invoice, Invoice
 
 Q1. Who is the most senior employee based on job title?
 
+```sql
 SELECT * FROM EMPLOYEE
 ORDER BY LEVELS DESC
 LIMIT 1;
+```
