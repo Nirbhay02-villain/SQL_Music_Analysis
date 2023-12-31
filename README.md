@@ -21,3 +21,20 @@ SELECT * FROM EMPLOYEE
 ORDER BY LEVELS DESC
 LIMIT 1;
 ```
+
+Q2. Which countries have the most Invoices?
+
+```sql
+SELECT BILLING_COUNTRY, COUNT(*) AS Most_Invoices FROM INVOICE
+GROUP BY BILLING_COUNTRY
+ORDER BY Most_Invoices DESC;
+```
+
+Q3. What are top 3 values of total invoice?
+
+```sql
+SELECT TOTAL FROM INVOICE
+ORDER BY TOTAL DESC
+LIMIT 3;
+```
+
